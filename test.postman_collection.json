@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "98363be5-db27-4c25-b821-c75ee571ff02",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16311712"
+	},
+	"item": [
+		{
+			"name": "getProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductosById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "crearProducto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Smartphone Xiaomi Redmi Note 11\",\r\n  \"descripcion\": \"Smartphone con pantalla AMOLED de 6.43 pulgadas y 128GB de almacenamiento\",\r\n  \"precio\": 249.99,\r\n  \"cantidad\": 50\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editProducto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Mouse Logitech Pro\",\r\n  \"descripcion\": \"Mouse inalámbrico profesional con sensor de alta precisión\",\r\n  \"precio\": 45.00,\r\n  \"cantidad\": 400\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/productos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
